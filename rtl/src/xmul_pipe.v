@@ -67,7 +67,7 @@ module xmul_pipe # (
         bhXah <= a_h*b_h;
 
         // stage 2
-        product <= {{DATA_W-2{1'd0}}, blXal} + {{DATA_W/2-2{blXah[DATA_W+1]}}, blXah, {DATA_W/2{1'd0}}} + {{DATA_W/2-1{bhXal[DATA_W+1]}}, bhXal, {DATA_W/2{1'd0}}} + {bhXah[DATA_W-1:0], {DATA_W{1'd0}}};
+        product <= {{DATA_W-2{1'd0}}, blXal} + {{DATA_W/2-2{blXah[DATA_W+1]}}, blXah, {DATA_W/2{1'd0}}} + {{DATA_W/2-2{bhXal[DATA_W+1]}}, bhXal, {DATA_W/2{1'd0}}} + {bhXah[DATA_W-1:0], {DATA_W{1'd0}}};
      end
 
 endmodule

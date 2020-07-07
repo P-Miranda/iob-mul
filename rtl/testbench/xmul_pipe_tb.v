@@ -90,11 +90,24 @@ module xmul_pipe_tb;
       a[j] = 1;
       b[j++] = 0;
 
+      a[j] = 0;
+      b[j++] = -1;
+
+      a[j] = -1;
+      b[j++] = 0;
+
       // mutiply by 1
       a[j] = 10;
       b[j++] = 1;
  
       a[j] = 1;
+      b[j++] = 10;
+
+      // mutiply by -1
+      a[j] = 10;
+      b[j++] = -1;
+ 
+      a[j] = -1;
       b[j++] = 10;
 
       // expected results
