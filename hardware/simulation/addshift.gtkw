@@ -1,0 +1,44 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Sun Nov  8 13:02:01 2020
+[*]
+[dumpfile] "/home/jsousa/sandbox/iob-asrc/submodules/MUL/hardware/simulation/icarus/mul_addshift.vcd"
+[dumpfile_mtime] "Sun Nov  8 13:00:27 2020"
+[dumpfile_size] 6601
+[savefile] "/home/jsousa/sandbox/iob-asrc/submodules/MUL/hardware/simulation/addshift.gtkw"
+[timestart] 0
+[size] 1920 1055
+[pos] -1 -1
+*0.000000 2 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] mul_addshift_tb.
+[sst_width] 324
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 296
+@28
+mul_addshift_tb.clk
+mul_addshift_tb.done
+@22
+mul_addshift_tb.op_a[3:0]
+mul_addshift_tb.op_b[3:0]
+mul_addshift_tb.product[7:0]
+@28
+mul_addshift_tb.start
+@201
+-CORE
+@28
+mul_addshift_tb.uut.clk
+mul_addshift_tb.uut.counter[1:0]
+mul_addshift_tb.uut.done
+@22
+mul_addshift_tb.uut.op_a[3:0]
+mul_addshift_tb.uut.op_a_reg[3:0]
+mul_addshift_tb.uut.op_b[3:0]
+mul_addshift_tb.uut.prod[7:0]
+mul_addshift_tb.uut.product[7:0]
+@28
+mul_addshift_tb.uut.start
+mul_addshift_tb.uut.start_posedge
+mul_addshift_tb.uut.start_reg
+[pattern_trace] 1
+[pattern_trace] 0
