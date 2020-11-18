@@ -36,7 +36,10 @@ module mul_addshift
      if(operand_reg_en)
        op_a_reg <= op_a_int;
 
-          
+
+   //program counter register
+   reg [$clog2(DATA_W):0]     pc, pc_nxt;
+       
    //product registers
    reg [2*DATA_W-1:0] product_reg;
    reg [2*DATA_W-1:0] product_nxt;
@@ -53,8 +56,6 @@ module mul_addshift
    //PROGRAM
    //
    
-   //program counter register
-   reg [$clog2(DATA_W):0]     pc, pc_nxt;
    always @ (posedge clk)
      if(!en)
        pc <= 1'b0;
