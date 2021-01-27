@@ -13,7 +13,7 @@ VLOG := iverilog -Wall -g2005-sv
 VSRC_PIPE := $(HW_DIR)/src/xmul_pipe.v $(HW_DIR)/testbench/xmul_pipe_tb.v
 VSRC_SERIAL := $(HW_DIR)/src/mul_addshift.v $(HW_DIR)/testbench/mul_addshift_tb.v
 
-all: 
+all: pipe addshift
 
 pipe: $(VSRC_PIPE)
 	$(VLOG) $(TB_DEFINE) $(VSRC_PIPE)
